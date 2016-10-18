@@ -116,6 +116,14 @@
 				$scope.newDescription = "";
 				console.log('created');
 			}
+
+			$scope.confirmDelete = function(index) {
+				$scope.item = index;
+			}
+
+			$scope.delete = function(itemIndex) {
+				$scope.items.splice(itemIndex, 1);
+			}
 		});
 	</script>
 </body>
